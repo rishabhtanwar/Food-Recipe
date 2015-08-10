@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardElevation="0.01dp"
+        android:layout_marginBottom="0dp">
+        <FrameLayout
+            android:id="@+id/top_layout"
+            android:layout_width="165dp"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:id="@+id/img_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="165dp"
+                android:src="@drawable/baby_needs"
+                android:scaleType="centerCrop"
+                android:layout_above="@+id/tv_food" />
+            <TextView
+                android:id="@+id/tv_food"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:background="#ff444444"
+                android:alpha=".7"
+                android:textColor="#fff"
+                android:padding="@dimen/margin_10"
+                android:textSize="@dimen/textview_large"
+                android:text="Test\nandand\nadaknd"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
